@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>各种翻页</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  
+  <section style="overflow:hidden;margin:0 auto;">
+
+    <section style="line-height:0;width:60%;margin:0 auto;">
+
+      <svg viewBox="0 0 600 861" style="display:inline-block;background-size:100%;background-image:url(img/3.jpg);">
+      
+        <g>
+          <foreignObject x="0" y="0" width="600" height="861">
+            <svg viewBox="0 0 600 861" style="width:100%;display:inline-block;background-size:100%;background-image:url(img/2.jpg);">
+            </svg>
+          </foreignObject>
+          <animateTransform attributeName="transform" type="translate" values="300 430" dur="1s" fill="freeze" restart="never" begin="click" additive="sum"></animateTransform> 
+          <animateTransform attributeName="transform" type="scale" values="1 1;0 1;0 1" keyTimes="0;0.5;1" dur="1s" fill="freeze" restart="never" begin="click" calcMode="spline" additive="sum" keySplines="0.5 0 0.5 1;0 0 1 1"></animateTransform>
+          <animateTransform attributeName="transform" type="translate" values="-300 -430" dur="1s" fill="freeze" restart="never" begin="click" additive="sum"></animateTransform>
+          <set attributeName="visibility" to="hidden" fill="freeze" restart="never" begin="click+1.2s"></set>
+        </g>
+
+        <g>
+          <foreignObject x="0" y="0" width="600" height="861">
+            <svg viewBox="0 0 600 861" style="width:100%;display:inline-block;background-size:100%;background-image:url(img/1.jpg);">
+            </svg>
+          </foreignObject>
+          <animateTransform attributeName="transform" type="translate" values="300 430" dur="1s" fill="freeze" restart="never" begin="click" additive="sum"></animateTransform> 
+          <animateTransform attributeName="transform" type="scale" values="1 1;0 1;0 1" keyTimes="0;0.5;1" dur="1s" fill="freeze" restart="never" begin="click" calcMode="spline" additive="sum" keySplines="0.5 0 0.5 1;0 0 1 1"></animateTransform>
+          <animateTransform attributeName="transform" type="translate" values="-300 -430" dur="1s" fill="freeze" restart="never" begin="click" additive="sum"></animateTransform>
+          <set attributeName="visibility" to="hidden" fill="freeze" restart="never" begin="click+1.2s"></set>
+        </g>
+      
+      </svg>
+
+    </section>
+
+  </section>
+
+</body>
+</html>
